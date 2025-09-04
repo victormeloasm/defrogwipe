@@ -1,4 +1,4 @@
-# DefrogWipe
+# DefrogWipe - 28Kb secure & complete disk eraser
 
 > **Secure device wipe with verification & JSON certificate** — minimal, auditable, and script‑friendly.
 >
