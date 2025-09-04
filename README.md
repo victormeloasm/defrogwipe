@@ -54,6 +54,8 @@
 
 The intended workflow is simple and auditable: **wipe → verify → store certificate → (optionally) independently audit.**
 
+DOWNLOAD: [![Download v1.1.0](https://img.shields.io/badge/Download-v1.1.0-blue)](https://github.com/victormeloasm/defrogwipe/releases/download/v1.1.0/defrogwipe.zip)
+
 ---
 
 ## Safety Warnings
