@@ -1,25 +1,3 @@
-// defrogwipe.cpp — Libertas Per Croack (Sapo + Ondaluna)
-// AVISO: ESTE PROGRAMA APAGA DADOS. USE COM CUIDADO.
-//
-// Builds sugeridos (clang + lld):
-// 1) Mínimo (menor binário):
-//   clang++ -std=c++23 -Oz -DNDEBUG -D_FILE_OFFSET_BITS=64 -pipe \
-//     -fvisibility=hidden -ffunction-sections -fdata-sections \
-//     -fstack-protector-strong -fPIE -fno-plt -flto=thin -fuse-ld=lld \
-//     -Wl,--gc-sections -Wl,--icf=all -Wl,-s -Wl,-O2 -Wl,--as-needed \
-//     -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -pie \
-//     -pthread defrogwipe.cpp -lsodium -o defrogwipe
-//
-// 2) Completo (NVMe + SCSI sanitize; precisa headers do sg):
-//   clang++ -std=c++23 -Oz -DNDEBUG -D_FILE_OFFSET_BITS=64 -pipe \
-//     -DUSE_LIBNVME -DUSE_SG_IO \
-//     -fvisibility=hidden -ffunction-sections -fdata-sections \
-//     -fstack-protector-strong -fPIE -fno-plt -flto=thin -fuse-ld=lld \
-//     -Wl,--gc-sections -Wl,--icf=all -Wl,-s -Wl,-O2 -Wl,--as-needed \
-//     -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -pie \
-//     -pthread defrogwipe.cpp -lsodium -o defrogwipe
-
-// C++ std
 #include <atomic>
 #include <chrono>
 #include <cinttypes>
