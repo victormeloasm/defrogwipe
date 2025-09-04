@@ -463,13 +463,12 @@ In **v0.x**, `N` is the **number of random 4 KiB samples** (not a percentage).
 
 ## License
 
-MIT (or another permissive license of your choice).
+MIT License
 
 ---
 
 ## Credits
 
-* **Víctor Duarte Melo (Porquinho)** — concept & implementation.
-* **SapoGPT** — documentation & testing.
+* **Víctor Duarte Melo** — concept, implementation, documentation & testing.
 
 *Libertas per croack!*
